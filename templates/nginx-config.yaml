@@ -11,6 +11,7 @@ data:
   nginx.conf: |
     events {}
     http {
+      client_max_body_size 1G;
       server {
         listen 8080;
         location /v2/ {
