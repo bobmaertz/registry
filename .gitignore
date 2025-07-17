@@ -1,0 +1,16 @@
+# Ignore Helm chart build and temp files
+charts/
+*.tgz
+*.lock
+values.yaml.override
+# Ignore editor and OS files
+.DS_Store
+.idea/
+.vscode/
+*.swp
+*.swo
+*.bak
+*.tmp
+# Ignore test output
+junit.xml
+coverage/
