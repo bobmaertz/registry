@@ -25,6 +25,7 @@ spec:
         chart: registry
         release: {{ .Release.Name }}
         heritage: {{ .Release.Service }}
+        {{- include "registry.labels" . | nindent 8 }}
         {{- with .Values.podLabels }}
         {{- toYaml . | nindent 8 }}
         {{- end }}
